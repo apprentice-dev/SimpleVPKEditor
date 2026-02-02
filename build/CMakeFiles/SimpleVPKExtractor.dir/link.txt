@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/SimpleVPKExtractor.dir/link.d CMakeFiles/SimpleVPKExtractor.dir/main.cpp.o -o SimpleVPKExtractor

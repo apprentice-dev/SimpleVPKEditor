@@ -1,3 +1,0 @@
-/home/apprentice/Desktop/Simple VPK Editor/build/CMakeFiles/main.dir
-/home/apprentice/Desktop/Simple VPK Editor/build/CMakeFiles/edit_cache.dir
-/home/apprentice/Desktop/Simple VPK Editor/build/CMakeFiles/rebuild_cache.dir
