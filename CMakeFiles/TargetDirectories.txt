@@ -1,2 +1,0 @@
-/home/apprentice/Desktop/SimpleVPKEditor/CMakeFiles/edit_cache.dir
-/home/apprentice/Desktop/SimpleVPKEditor/CMakeFiles/rebuild_cache.dir
