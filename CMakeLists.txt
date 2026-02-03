@@ -35,9 +35,13 @@ include(custom_findwxwidgets.cmake)
 
 add_executable(test)
 
-target_include_directories(test PUBLIC ${wxWidgets_INCLUDE_DIRS})
+#target_include_directories(test PUBLIC ${wxWidgets_INCLUDE_DIRS})
 
-target_link_libraries(test PRIVATE ${wxWidgets_LIBRARIES})
+#target_link_libraries(test PUBLIC ${wxWidgets_LIBRARIES})
+
+#target_link_options(test PUBLIC ${wxWidgets_LIBRARIES})
+
+target_link_libraries(test PRIVATE wxWidgets::wxWidgets)
 
 target_sources(test PRIVATE ${CMAKE_SOURCE_DIR}/src/main.cpp ${CMAKE_SOURCE_DIR}/src/windows/mainwindow.cpp PUBLIC FILE_SET HEADERS FILES ${CMAKE_SOURCE_DIR}/src/windows/mainwindow.hpp)
 

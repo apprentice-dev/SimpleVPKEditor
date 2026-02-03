@@ -9,10 +9,11 @@ class SVE : public wxApp{
 		mainwindow->Show();
 		return true;
         }
-}
+};
 
-DECLARE_APP(SVE);
-IMPLEMENT_APP(SVE);
+DECLARE_APP(SVE)
+
+IMPLEMENT_APP(SVE)
 
 
 
