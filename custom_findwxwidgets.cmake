@@ -374,8 +374,12 @@ list(APPEND wxWidgets_INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/wxwidgets/include)
 
 macro(wx_extract_version)
   unset(_wx_filename)
-  find_file(_wx_filename wx/version.h PATHS ${wxWidgets_INCLUDE_DIRS} NO_DEFAULT_PATH)
+  #faulty ass find module, overriding
+  set(_wx_filename ${CMAKE_SOURCE_DIR}/wxwidgets/include/wx/version.h)
+  #find_file(_wx_filename wx/version.h PATHS ${wxWidgets_INCLUDE_DIRS} NO_DEFAULT_PATH)
   dbg_msg("_wx_filename:  ${_wx_filename}")
+
+
 
   if(NOT _wx_filename)
     message(FATAL_ERROR "wxWidgets wx/version.h file not found in ${wxWidgets_INCLUDE_DIRS}.")
@@ -429,6 +433,7 @@ if(wxWidgets_FIND_STYLE STREQUAL "win32")
       set(wxWidgets_FIND_COMPONENTS core base) # this is default
     endif()
   endif()
+
 
   # Add the common (usually required libs) unless
   # wxWidgets_EXCLUDE_COMMON_LIBRARIES has been set.
