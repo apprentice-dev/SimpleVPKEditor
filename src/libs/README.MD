@@ -1,0 +1,3 @@
+# What is this?
+
+This is a separate module (or library) that is compiled as a dependency that gets fed to the main program (the simple vpk extractor), and this is no magic, other than being a subdirectory itself... 

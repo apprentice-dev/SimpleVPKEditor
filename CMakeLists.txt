@@ -43,6 +43,8 @@ add_executable(test)
 
 target_link_libraries(test PRIVATE wxWidgets::wxWidgets)
 
+add_subdirectory(${CMAKE_SOURCE_DIR}/src/libs)
+
 target_sources(test PRIVATE ${CMAKE_SOURCE_DIR}/src/main.cpp ${CMAKE_SOURCE_DIR}/src/windows/mainwindow.cpp PUBLIC FILE_SET HEADERS FILES ${CMAKE_SOURCE_DIR}/src/windows/mainwindow.hpp)
 
 #target_link_options(test PUBLIC ${wxWidgets_LIBRARIES})
